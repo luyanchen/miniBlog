@@ -19,7 +19,7 @@
     </div>
     <div class="u-div-40"></div>
     <div class="u-slink s-fc-g ">
-      <p><a href="#/m/login/">已有账号，直接登录</a></p>
+      <p><a href="#/m/login/"><span class="s-fc-g">已有账号，直接登录</span></a></p>
     </div>
   </div>
   <div class="page" r-hide={page != 'second'}>
@@ -27,10 +27,10 @@
            on-keyup={this.hideErr()} on-blur={this.validate('pwd',pwd)}/>
     <div class="u-div-10"></div>
     <input r-model={repwd} class="u-input" type="password"  autocomplete="off" placeholder="请输入重复密码"
-           on-keyup={this.hideErr()} on-blur={this.validate('repwd',repwd)}/>
+           on-keyup={this.hideErr()} on-blur={this.validate('repwd',repwd)} />
     <div class="u-div-10"></div>
     <input r-model={nickname} class="u-input" type="text"  autocomplete="off" placeholder="请输入昵称"
-           on-keyup={this.hideErr()} on-blur={this.validate('nickname',nickname)}/>
+           on-keyup={this.hideErr()} on-blur={this.validate('nickname',nickname)} />
     <div class="u-div-50"></div>
     <div class="u-btn">
       <div class="btn btn-small active f-fl" on-click={page = "first"}>上一步</div>
@@ -56,4 +56,4 @@
   <div class="u-tips">
     <div r-class={{"active":!!success,"negative":!success}}>{msg}</div>
   </div>
-</form>
+</div>

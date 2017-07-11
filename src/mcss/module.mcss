@@ -95,7 +95,6 @@
 	border-top:1px solid $gray1;
 	background: $white;
 	max-width: 750px;
-	color:$black1;
 	.top{
 		float:top;
 		padding-top:6px;
@@ -108,6 +107,7 @@
 	.bottom{
 		font-size: 12px;
 		padding-bottom: 5px;
+		color:$black1;
 	}
 	.active{color:$green;}
 }

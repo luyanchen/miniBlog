@@ -405,7 +405,6 @@ hr{
 	border-top:1px solid #f9f9f9;
 	background:#fff;
 	max-width:750px;
-	color:#999;
 }
 .m-nav .top{
 	float:top;
@@ -419,6 +418,7 @@ hr{
 .m-nav .bottom{
 	font-size:12px;
 	padding-bottom:5px;
+	color:#999;
 }
 .m-nav .active{
 	color:#67c2c6;
