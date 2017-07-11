@@ -1,0 +1,40 @@
+<session>
+  <div class="m-comment" ref=comment>
+    <hr/>
+    <div class="title" id="comment-start">
+      <span><img src="/res/images/pl.png"/></span>
+      <span class="text">评论</span>
+    </div>
+    <hr/>
+    <div class="m-list m-list-comment">
+      {#list list as x}
+      <div class="list">
+        <div class="g-flexbox">
+          <div class="headimg"><img src="{x.headimg}"/></div>
+          <div class="g-flex1 center">
+            <div class="name">{x.nickname}</div>
+            <div class="time">{x.publishTime|format:'yyyy-MM-dd HH:mm'}</div>
+            <div class="content">{x.content}</div>
+            {#if x.canDelete}
+            <div class="f-tal s-fc-y ">
+              <div class="delcomment" on-click={this.delItem(x._id,x_index)}>删除</div>
+            </div>
+            {/if}
+          </div>
+        </div>
+        <hr/>
+      </div>
+      {/list}
+    </div>
+    <div class="u-div-40"></div>
+    <div class="send">
+      <div class="g-flexbox">
+        <div class="g-flex1 u-content"><input type="text" class="input" r-model={content} placeholder="我也来说几句..."
+                                    autocomplete="off" on-keyup={this.hideErr()} on-blur={this.validate('content',content)} minlength="1" maxlength="40"></div>
+        <div class="g-flex1 u-btn">
+          <div class="btn active"  on-click={this.addComment()}>发送</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</session>

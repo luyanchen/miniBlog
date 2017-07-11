@@ -1,0 +1,20 @@
+<div class="m-editpwd">
+  <div class="u-div-30"></div>
+  <div class="page">
+    <input r-model={oldpwd} class="u-input" type="password" autocomplete="off" placeholder="原密码"
+           on-keyup={this.hideErr()} on-blur={this.validate('oldpwd',oldpwd)}/>
+    <div class="u-div-10"></div>
+    <input r-model={pwd} class="u-input" type="password" autocomplete="off" placeholder="新密码"
+           on-keyup={this.hideErr()} on-blur={this.validate('pwd',pwd)}/>
+    <input r-model={repwd} class="u-input" type="password" autocomplete="off" placeholder="确认新密码"
+           on-keyup={this.hideErr()} on-blur={this.validate('repwd',repwd)}/>
+    <div class="u-div-50"></div>
+    <div class="u-bt">
+      <div class="btn active " on-click={this.submit()}>完成</div>
+    </div>
+    <div class="u-div-20"></div>
+    <div class="u-tips">
+      <div r-class={{"active":!!success,"negative":!success}}>{msg}</div>
+    </div>
+  </div>
+</div>

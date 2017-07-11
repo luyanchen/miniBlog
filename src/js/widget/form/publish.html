@@ -1,0 +1,20 @@
+<div class="m-publish">
+  <div class="u-div-30" ></div>
+  <form >
+    <div class="u-div-10"></div>
+    <input r-model={title} class="u-input" type="text"  autocomplete="off" placeholder="标题" on-keyup={this.hideErr()} on-blur={this.validate('title',title)} minlength="1" maxlength="40"/>
+    <div class="u-div-10"></div>
+    <div class="u-textarea">
+      <textarea r-model={content} type="text"  class="textarea"  placeholder="分享新鲜事" on-keyup={this.hideErr()} on-blur={this.validate('content',content)} minlength="1" maxlength="400"/>
+    </div>
+    <div class="u-div-10"></div>
+    <div class="u-div-50"></div>
+    <div class="u-btn">
+      <div class="btn active" on-click={this.submit()}>发表</div>
+    </div>
+  </form>
+  <div class="u-div-20"></div>
+  <div class="u-tips">
+    <div r-class={{"active":!!success,"negative":!success}}>{msg}</div>
+  </div>
+</div>

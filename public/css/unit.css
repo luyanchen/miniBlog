@@ -1,0 +1,188 @@
+.s-fc-g{
+	color:#67c2c6;
+}
+.s-fc-r{
+	color:#f55252;
+}
+.s-fc-o{
+	color:#fda843;
+}
+.s-fc-b{
+	color:#333;
+}
+.s-fc-y{
+	color:#f6a60d;
+}
+.s-fc-gr1{
+	color:#f9f9f9;
+}
+.s-fc-gr2{
+	color:#e9e9e9;
+}
+.s-fc-gr3{
+	color:#ccc;
+}
+.s-bg-gr{
+	background:#f9f9f9;
+}
+.s-bg-w{
+	background:#fff;
+}
+.f-cb:after{
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	overflow:hidden;
+	content:".";
+}
+.f-fl{
+	float:left;
+}
+.f-fr{
+	float:right;
+}
+.f-tal{
+	text-align:left;
+}
+.f-tar{
+	text-align:right;
+}
+.f-tac{
+	text-align:center;
+}
+.f-dn{
+	display:none;
+}
+.f-ib{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.f-fwb{
+	font-weigth:bold;
+}
+.f-move{
+	cursor:move;
+	cursor:-webkit-grab;
+	cursor:-moz-grab;
+	cursor:-ms-grab;
+	cursor:-o-grab;
+}
+.f-pr{
+	position:relative;
+}
+.f-pa{
+	position:absolute;
+}
+.f-vbh{
+	visibility:hidden;
+}
+.f-clearboth{
+	*zoom:1;
+}
+.f-clearboth:before,.f-clearboth:after{
+	display:table;
+	content:"";
+	line-height:0;
+}
+.f-clearboth:after{
+	clear:both;
+}
+hr{
+	margin:5px 0px;
+	height:1px;
+	border:none;
+	border-top:1px solid #ccc;
+}
+.u-btn-wrap{
+	width:80%;
+	margin:0px 10%;
+}
+.u-btn{
+	text-align:center;
+	margin:0 0;
+	line-height:40px;
+	-webkit-border-radius:4px 4px;
+	-moz-border-radius:4px 4px;
+	border-radius:4px 4px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+}
+.u-btn.active{
+	background:#67c2c6;
+}
+.u-btn.default{
+	background:#ccc;
+}
+.u-btn.red{
+	background:#f55252;
+}
+.u-btn-small{
+	display:inline-block;
+	width:100px;
+}
+.u-div-50{
+	height:50px;
+	width:100%;
+}
+.u-div-40{
+	height:40px;
+	width:100%;
+}
+.u-div-30{
+	height:30px;
+	width:100%;
+}
+.u-div-20{
+	height:20px;
+	width:100%;
+}
+.u-div-10{
+	height:10px;
+	width:100%;
+}
+.u-div-5{
+	height:5px;
+	width:100%;
+}
+.u-div-4{
+	height:4px;
+	width:100%;
+}
+.u-div-3{
+	height:3px;
+	width:100%;
+}
+.u-div-2{
+	height:2px;
+	width:100%;
+}
+.u-div-1{
+	height:1px;
+	width:100%;
+}
+.u-tips .active{
+	color:#67c2c6;
+	text-align:center;
+}
+.u-tips .negative{
+	color:#f55252;
+	text-align:center;
+}
+.u-input{
+	border:1px solid #ddd;
+	width:100%;
+	line-height:40px;
+	font-size:16px;
+	color:#999;
+	background:#fff;
+}
+.u-slink{
+	font-size:14px;
+	text-align:center;
+}
+.u-btn-s-wrap{
+	margin:0px 30px;
+}

@@ -1,0 +1,8 @@
+<div class="wrapper" style="{wrapperStyle}" ref="wrapper" on-touchstart = {this.onTouchStart($event)} on-touchmove = {this.onTouchMove($event)} on-touchend = {this.onTouchEnd($event)}>
+  <div class="pullDown" r-hide={!showDownLoading}><span >{downMsg}</span></div>
+  <div class="scroller" style="{scrollerStyle}" ref="scroller" >
+    {#include this.$body}
+  </div>
+  <div class="pullDown" r-hide={!showUpLoading}><span >{upMsg}</span></div>
+</div>
+

@@ -1,0 +1,61 @@
+@import  'skin';
+@import  'function';
+.u-btn{
+    width:80%;margin: 0px 10%;
+    .btn{
+        text-align: center;
+        margin:0 0;
+        line-height:40px;
+        $border-radius: 4px 4px;
+        text-align:center;
+        font-size: 16px;
+        color: $white;
+        &.active{background: $green;}
+        &.default{background: $gray3;}
+        &.red{background:$red}
+    }
+    .btn-small{
+        display: inline-block;
+        width: 100px;
+    }
+}
+.u-btn-1{margin:0px 30px;}
+/*空白div*/
+$div-hlist = 50,40,30,20,10,5,4,3,2,1;
+.u-div-#{$div-hlist}{
+	height: $item+px;
+	width:100%;
+	@extend .bg-Color
+}
+/*提示*/
+.u-tips{
+	.active{color:$green;text-align:center;};
+	.negative{color:$red;text-align:center;};
+}
+/*输入框*/
+.u-input{
+    border:1px solid #dddddd;
+    width: 100%;
+    line-height:40px;
+    font-size: 16px;
+    color: #999999;
+    background: $white;
+}
+/*textarea*/
+.u-textarea{
+    margin: 0px 12px;
+	.textarea{
+	    padding:0px;
+	    background: #ffffff;
+	    height:180px;
+	    color: #999999;
+	    font-size: 14px;
+	    border-radius: 3px;
+	    width:100%;
+	}
+}
+/*链接*/
+.u-slink{font-size: 14px;text-align:center;}
+
+
+

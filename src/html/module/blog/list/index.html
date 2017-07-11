@@ -1,0 +1,45 @@
+<meta charset="utf-8"/>
+<textarea name="txt" id="module-id-d4">
+  <div class="s-bg-white">
+    <div class="u-div-5"></div>
+    <div class="j-scroller"></div>
+  </div>
+  <div class="u-div-40"></div>
+  <div class="u-div-40"></div>
+</textarea>
+<textarea name="txt" id="listbox">
+  <div class="m-list">
+    <div class="j-list"></div>
+    <div class="j-upmore u-tips"><div class="active">正在努力加载中</div></div>
+  </div>
+</textarea>
+<textarea name="jst" id="listTemplate">
+{list beg..end as y}
+  {var x=xlist[y]}
+  <div class="list" id=${x._id|seed}>
+    <div class="g-flexbox">
+      <div class="headimg"><img src="${x.headimg}"/></div>
+      <div class="g-flex1 center">
+        <a href="#/m/index/detail/?blogid=${x._id}">
+        <div class="title"><span class="titleline">${x.title}</span></div>
+        <div class="content"><span class="sourceline">${x.nickname}</span></div>
+        <div class="content">${x.publishTime|format:'yyyy-MM-dd HH:mm'}</div>
+        </a>
+        <div class="bottom">
+          <span class="left ">阅读(${x.accessCount})</span>
+          <span class="left ">评论(${x.commentCount})</span>
+        </div>
+      </div>
+      <div class="f-tac ">
+        {if x.canDelete}
+        <a href="javascript:;" class="s-fc-y" data-id="${x._id}" data-action="delete">删除</a>
+         {/if}
+      </div>
+    </div>
+    <hr/>
+  </div>
+  {/list}
+</textarea>
+<!-- @TEMPLATE -->
+<textarea name="js" data-src="./index.js"></textarea>
+<!-- /@TEMPLATE -->

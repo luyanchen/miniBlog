@@ -1,0 +1,59 @@
+<div class="m-register">
+  <div class="u-div-20"></div>
+  <div class="page" r-hide={page != 'first'}>
+    <input r-model={phone} class="u-input" type="text"  autocomplete="off" placeholder="请输入11位手机号码"
+           on-keyup={this.hideErr()} on-blur={this.validate('phone',phone)}/>
+    <div class="u-div-10"></div>
+    <div class="g-flexbox">
+      <div class="g-flex1">
+        <input r-model={code} class=" u-input u-input-left" type="text"  autocomplete="off"
+               placeholder="请输入验证码" on-keyup={this.hideErr()} on-blur={this.validate('code',code)}/></div>
+      <div class="u-code f-tac">
+        <div class="active" on-click={this.getCode()}>获取验证码</div>
+      </div>
+    </div>
+    <div class="u-div-50"></div>
+    <div class="u-div-10"></div>
+    <div class="u-btn">
+      <div class="btn active" on-click={this.nextPage()}>下一步</div>
+    </div>
+    <div class="u-div-40"></div>
+    <div class="u-slink s-fc-g ">
+      <p><a href="#/m/login/">已有账号，直接登录</a></p>
+    </div>
+  </div>
+  <div class="page" r-hide={page != 'second'}>
+    <input r-model={pwd} class="u-input" type="password"  autocomplete="off" placeholder="请输入密码"
+           on-keyup={this.hideErr()} on-blur={this.validate('pwd',pwd)}/>
+    <div class="u-div-10"></div>
+    <input r-model={repwd} class="u-input" type="password"  autocomplete="off" placeholder="请输入重复密码"
+           on-keyup={this.hideErr()} on-blur={this.validate('repwd',repwd)}/>
+    <div class="u-div-10"></div>
+    <input r-model={nickname} class="u-input" type="text"  autocomplete="off" placeholder="请输入昵称"
+           on-keyup={this.hideErr()} on-blur={this.validate('nickname',nickname)}/>
+    <div class="u-div-50"></div>
+    <div class="u-btn">
+      <div class="btn btn-small active f-fl" on-click={page = "first"}>上一步</div>
+      <div class="btn btn-small active f-fr"  on-click={this.nextPage()}>下一步</div>
+    </div>
+  </div>
+  <div class="page" r-hide={page != 'third'}>
+    <div class="u-label">请选择您性别</div>
+    <div class="u-input select-item" on-click={sex=0}>
+      <div class="f-tal sex" r-class={{"active":!sex,"default":!!sex}} ><label>男</label></div>
+    </div>
+    <div class="u-input select-item" on-click={sex=1}>
+      <div class="f-tal sex" r-class={{"active":!!sex,"default":!sex}} ><label>女</label></div>
+    </div>
+    <div class="u-div-50 "></div>
+    <div class="u-btn">
+      <div class="btn btn-small active f-fl" on-click={page = "second"}>上一步</div>
+      <div class="btn btn-small active f-fr"  on-click={this.register()}>完成</div>
+    </div>
+  </div>
+  <div class="u-div-20"></div>
+  <div class="u-div-20"></div>
+  <div class="u-tips">
+    <div r-class={{"active":!!success,"negative":!success}}>{msg}</div>
+  </div>
+</form>

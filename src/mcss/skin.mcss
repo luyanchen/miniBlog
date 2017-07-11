@@ -1,0 +1,26 @@
+/*-------------------皮肤相关------------------------*/
+/*color*/
+$gray1 = #F9F9F9;
+$gray2 = #E9E9E9;
+$gray3 = #CCCCCC;
+$white = #FFFFFF;
+$green = #67C2C6;
+$red = #F55252;
+$orange = #FDA843;
+$black1 = #999999;
+$black2 = #333333;
+$yellow = #F6A60D;
+
+/*文字颜色*/
+.s-fc-g{color:$green;}
+.s-fc-r{color:$red;}
+.s-fc-o{color:$orange;}
+.s-fc-b{color:$black2;}
+.s-fc-y{color:$yellow;}
+.s-fc-gr1{color:$gray1;}
+.s-fc-gr2{color:$gray2;}
+.s-fc-gr3{color:$gray3;}
+
+/*背景颜色*/
+.s-bg-gr{background: $gray1;}
+.s-bg-w{background: $white;}

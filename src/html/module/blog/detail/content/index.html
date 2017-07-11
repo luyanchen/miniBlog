@@ -1,0 +1,29 @@
+<meta charset="utf-8"/>
+<textarea name="txt" id="module-id-d7">
+  <div></div>
+</textarea>
+<textarea name="jst" id="contentTemplate">
+<session>
+  <article>
+    <div class="m-article">
+      <div class="top">
+        <div class="title" id="wx-title">${title}</div>
+        <div class="source-time">
+          <div id="wx-source">${nickname}</div>
+          <div id="wx-date">${publishTime|format:'yyyy-MM-dd HH:mm'}</div>
+        </div>
+      </div>
+      <div class="content" >
+        <div id="wx-content">${content}</div>
+        <div class="readnum">
+            <span>阅读(${accessCount})</span>
+            <span>评论(${commentCount})</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</session>
+</textarea>
+<!-- @TEMPLATE -->
+<textarea name="js"  data-src="./index.js"></textarea>
+<!-- /@TEMPLATE -->

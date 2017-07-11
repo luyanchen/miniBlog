@@ -1,0 +1,47 @@
+@import  'skin';
+/* function */
+.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.f-tal{text-align:left;}
+.f-tar{text-align:right;}
+.f-tac{text-align:center;}
+.f-dn{display:none;}
+.f-ib{display:inline-block;*display:inline;*zoom:1;}
+.f-fwb{font-weigth:bold;}
+.f-move{cursor:move;cursor:-webkit-grab;cursor:-moz-grab;cursor:-ms-grab;cursor:-o-grab;}
+.f-pr{position:relative;}
+.f-pa{position:absolute;}
+.f-vbh{visibility:hidden;}
+
+/*清除浮动*/
+$clearfix = {
+    *zoom: 1;
+    &:before, &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+.f-clearboth{$clearfix();}
+/*圆角*/
+$border-radius = ($radius, $direction){
+    @if !$direction{
+        $join = '';
+    }@else{
+        $join = '-' + join($direction);
+    }
+    -webkit-border#{$join}-radius: $radius;
+       -moz-border#{$join}-radius: $radius;
+            border#{$join}-radius: $radius;
+}
+hr{
+    margin:5px 0px;
+    height:1px;
+    border:none;
+    border-top:1px solid $gray3 ;
+}
+
